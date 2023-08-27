@@ -1,0 +1,16 @@
+.chart-container {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    padding: 20px;
+    box-sizing: border-box;
+
+    canvas {
+        width: 100%;
+        height: auto;
+    }
+
+    @media (max-width: 768px) {
+        max-width: 450px;
+    }
+}

@@ -1,0 +1,20 @@
+.left-sidebar-wrapper {
+    .dashboard-title-wrapper {
+        height: 50px;
+        border-left: 5px solid #ffffff;
+    }
+
+    .active {
+        border-left: 5px solid #ff5b5a;
+        color: #ff5b5a;
+        background: #fef0f0;
+    }
+
+    .grow-icon-wrapper {
+        font-size: 20px;
+    }
+
+    .clickable {
+        cursor: pointer;
+    }
+}

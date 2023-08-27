@@ -1,0 +1,166 @@
+<div class="social-container mt-3">
+    <div class="social-box" [ngClass]="activeTab == 'ADD' ? 'active' : ''" (click)="activeTab = 'ADD'">
+        <div class="box-content">
+            <i class="icon fas fa-plus"></i>
+            <span class="box-text">ADD</span>
+        </div>
+    </div>
+    <div class="social-box" [ngClass]="activeTab == 'DRIBBBLE' ? 'active' : ''" (click)="activeTab = 'DRIBBBLE'">
+        <div class="box-content">
+            <i class="icon fab fa-dribbble"></i>
+            <span class="box-text">DRIBBBLE</span>
+        </div>
+    </div>
+    <div class="social-box" [ngClass]="activeTab == 'INSTAGRAM' ? 'active' : ''" (click)="activeTab = 'INSTAGRAM'">
+        <div class="box-content">
+            <i class="fab fa-instagram" aria-hidden="true"></i>
+            <span class="box-text">INSTAGRAM</span>
+        </div>
+    </div>
+    <div class="social-box" [ngClass]="activeTab == 'YOUTUBE' ? 'active' : ''" (click)="activeTab = 'YOUTUBE'">
+        <div class="box-content">
+            <i class="fab fa-youtube"></i>
+            <span class="box-text">YOUTUBE</span>
+        </div>
+    </div>
+    <div class="social-box" [ngClass]="activeTab == 'FACEBOOK' ? 'active' : ''" (click)="activeTab = 'FACEBOOK'">
+        <div class="box-content">
+            <i class="fab fa-facebook-square" aria-hidden="true"></i>
+            <span class="box-text">FACEBOOK</span>
+        </div>
+    </div>
+    <div class="social-box" [ngClass]="activeTab == 'TWITTER' ? 'active' : ''" (click)="activeTab = 'TWITTER'">
+        <div class="box-content">
+            <i class="fab fa-brands fa-twitter"></i>
+            <span class="box-text">TWITTER</span>
+        </div>
+    </div>
+</div>
+<h4 class="weekly-header">WEEKLY STATISTICS</h4>
+<div class="weekly-container">
+    <div class="weekly-box">
+        <div class="box-content">
+            <span class="box-text text-danger">USERS</span>
+            <div class="d-flex">
+                <h1 class="mr-4">12,924</h1>
+                <img class="img-wrapper" src="../../../../../assets/image/trend-up.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="weekly-box">
+        <div class="box-content">
+            <span class="box-text text-danger">NEW USERS</span>
+            <div class="d-flex">
+                <h1 class="mr-4">5,200</h1>
+                <img class="img-wrapper" src="../../../../../assets/image/trend-down.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="weekly-box">
+        <div class="box-content">
+            <span class="box-text text-danger">PAGE VIEW</span>
+            <div class="d-flex">
+                <h1 class="mr-4">467k</h1>
+                <img class="img-wrapper" src="../../../../../assets/image/trend-up.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="weekly-box">
+        <div class="box-content">
+            <span class="box-text text-danger">BOUCE RATE</span>
+            <div class="d-flex">
+                <h1 class="mr-4">43.5%</h1>
+                <img class="img-wrapper" src="../../../../../assets/image/trend-down.svg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="header-container d-flex">
+    <h4 class="dayily-header">DAYILY VISITOR</h4>
+    <h4 class="monthly-header">MONTHLY VISITORS</h4>
+</div>
+<app-chart></app-chart>
+<h4 class="world-map-header">WORLD MAP</h4>
+<div class="d-flex">
+    <img class="world-map-img" src="../../../assets/image/world-map.jpg">
+    <div class="table-container">
+        <table class="responsive-table">
+            <thead>
+                <tr>
+                    <th>Country</th>
+                    <th>Visitors</th>
+                    <th>%Users</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="country-container">
+                            <div class="circleBase circle1"></div>
+                            <span class="country-name">North America</span>
+                        </div>
+                    </td>
+                    <td>2,345,300</td>
+                    <td>30%</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="country-container">
+                            <div class="circleBase circle2"></div>
+                            <span class="country-name">South America</span>
+                        </div>
+                    </td>
+                    <td>1,545,567</td>
+                    <td>30%</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="country-container">
+                            <div class="circleBase circle3"></div>
+                            <span class="country-name">Europ</span>
+                        </div>
+                    </td>
+                    <td>345,300</td>
+                    <td>30%</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="country-container">
+                            <div class="circleBase circle4"></div>
+                            <span class="country-name">Asia</span>
+                        </div>
+                    </td>
+                    <td>2,345,300</td>
+                    <td>30%</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="country-container">
+                            <div class="circleBase circle5"></div>
+                            <span class="country-name">Africa</span>
+                        </div>
+                    </td>
+                    <td>2,345,300</td>
+                    <td>30%</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="country-container">
+                            <div class="circleBase circle6"></div>
+                            <span class="country-name">Australia</span>
+                        </div>
+                    </td>
+                    <td>2,345,300</td>
+                    <td>30%</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="copyright mt-4">
+    <p class="text-muted">Copyright &copy; 2022 Socialstat Inc.</p>
+    <div class="d-flex">
+        <p class="terms mr-3">Terms</p>
+        <p class="conditions">Conditions</p>
+    </div>
+</div>
